@@ -1,0 +1,24 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/react-tower/node_modules
+/react-tower/.pnp
+/react-tower/.pnp.js
+
+# testing
+/react-tower/coverage
+
+# production
+/react-tower/build
+
+# misc
+/react-tower/.DS_Store
+/react-tower/.env.local
+/react-tower/.env.development.local
+/react-tower/.env.test.local
+/react-tower/.env.production.local
+
+/react-tower/npm-debug.log*
+/react-tower/yarn-debug.log*
+/react-tower/yarn-error.log*
+persentation.pptx
