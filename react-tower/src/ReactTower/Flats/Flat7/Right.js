@@ -1,7 +1,7 @@
 
 function Right() {
     return (
-     <div>To jest moja ściana nie ruszać!</div>
+     <div>lorem ipsum</div>
     );
   }
   

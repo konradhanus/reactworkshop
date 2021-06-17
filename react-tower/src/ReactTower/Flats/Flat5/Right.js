@@ -1,7 +1,8 @@
+import Tv from './components/Tv';
 
 function Right() {
     return (
-     <div></div>
+     <div><Tv></Tv></div>
     );
   }
   

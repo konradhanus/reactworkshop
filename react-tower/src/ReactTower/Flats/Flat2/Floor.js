@@ -1,7 +1,11 @@
+import RemoteController from "./mainComponents/RemoteController";
 
 function Floor() {
   return (
-   <div>Jest</div>
+  <div>
+    <div>Julia</div>
+    <div><RemoteController/></div>
+  </div>
   );
 }
 

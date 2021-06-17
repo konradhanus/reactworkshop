@@ -1,9 +1,9 @@
+import Remote from "./components/Remote";
 
 function Right() {
-    return (
-     <div></div>
-    );
-  }
-  
-  export default Right;
-  
+  return (
+    <div><Remote /></div>
+  );
+}
+
+export default Right;

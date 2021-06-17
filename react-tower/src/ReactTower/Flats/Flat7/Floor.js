@@ -1,8 +1,9 @@
+import Remote from './components/Remote';
 
 function Floor() {
   return (
-   <div>A jak mam fajny Widok!</div>
-  );
+    <div><Remote /></div>
+   );
 }
 
 export default Floor;

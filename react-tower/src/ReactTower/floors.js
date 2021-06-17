@@ -8,6 +8,7 @@ import Flat7 from './Flats/Flat7';
 
 const floors = [
 	{
+		owner: '',
 		level: 1,
 		leftWall: {
 			color: '#727475'
@@ -42,6 +43,7 @@ const floors = [
 		}
 	},
 	{
+		owner: '',
 		level: 3,
 		leftWall: {
 			color: '#E4B733'
@@ -59,6 +61,7 @@ const floors = [
 		}
 	},
 	{
+		owner: '',
 		level: 4,
 		leftWall: {
 			color: '#E63d26'
@@ -76,6 +79,7 @@ const floors = [
 		}
 	},
 	{
+		owner: '',
 		level: 5,
 		leftWall: {
 			color: '#F4B808'
@@ -93,6 +97,7 @@ const floors = [
 		}
 	},
 	{
+		owner: '',
 		level: 6,
 		leftWall: {
 			color: '#4FA640'
@@ -110,6 +115,7 @@ const floors = [
 		}
 	},
 	{
+		owner: '',
 		level: 7,
 		leftWall: {
 			color: '#1D70B8'

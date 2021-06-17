@@ -1,7 +1,8 @@
+import TvRemote from './components/TvRemote.js';
 
 function Right() {
     return (
-     <div></div>
+     <div><TvRemote></TvRemote></div>
     );
   }
   

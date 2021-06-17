@@ -1,7 +1,8 @@
+import TV from "./components/TV";
 
 function Left() {
     return (
-     <div>4</div>
+     <div><TV /></div>
     );
   }
   

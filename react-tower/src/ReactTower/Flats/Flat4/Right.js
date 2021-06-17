@@ -1,7 +1,9 @@
 
+import Remote from "./components/Remote";
+
 function Right() {
     return (
-     <div></div>
+     <div><Remote/></div>
     );
   }
   

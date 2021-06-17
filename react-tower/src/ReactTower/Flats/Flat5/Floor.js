@@ -1,7 +1,6 @@
-
 function Floor() {
   return (
-   <div>Podłogi</div>
+   <div>Daniel</div>
   );
 }
 

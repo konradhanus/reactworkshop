@@ -1,7 +1,8 @@
+import RemoteSwitch from './components/RemoteSwitch';
 
 function Left() {
     return (
-     <div>5</div>
+     <div><RemoteSwitch></RemoteSwitch></div>
     );
   }
   

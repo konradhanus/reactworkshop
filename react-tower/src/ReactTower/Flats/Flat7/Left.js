@@ -1,9 +1,9 @@
+import Telewizor from './components/Telewizor';
 
 function Left() {
     return (
-     <div>7</div>
+     <div><Telewizor /></div>
     );
   }
   
   export default Left;
-  

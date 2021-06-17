@@ -1,7 +1,8 @@
+import Tv from "./Tv";
 
 function Right() {
     return (
-     <div></div>
+     <div><Tv /></div>
     );
   }
   

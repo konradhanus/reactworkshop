@@ -1,7 +1,7 @@
 
 function Floor() {
   return (
-   <div>Kawałek</div>
+   <div>Kuba</div>
   );
 }
 

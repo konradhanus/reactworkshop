@@ -1,9 +1,9 @@
+import Tv from "./components/Tv";
 
 function Left() {
-    return (
-     <div>6</div>
-    );
-  }
-  
-  export default Left;
-  
+  return (
+    <div><Tv /></div>
+  );
+}
+
+export default Left;

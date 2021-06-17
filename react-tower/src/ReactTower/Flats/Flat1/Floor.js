@@ -1,9 +1,10 @@
-
+import Remote from "./Remote";
 function Floor() {
 
   return (
-   <div>Ttest</div>
+   <div>Viacheslav <Remote /></div>
   );
 }
 
 export default Floor;
+
