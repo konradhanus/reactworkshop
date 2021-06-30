@@ -7,7 +7,7 @@ class Window extends React.Component {
     };
    
     componentDidUpdate(prevProps) {
-        if(prevProps.night !== this.props.night) {
+        if (prevProps.night !== this.props.night) {
             this.setState({night: this.props.night});
         }
     }

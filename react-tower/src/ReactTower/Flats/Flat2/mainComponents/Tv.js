@@ -15,11 +15,11 @@ class TV extends React.Component {
 
     getSrc() {
         console.log(this.state.state);
-       return this.state.state == 'on' ? imageTVOn : imageTVOff 
+        return this.state.state == 'on' ? imageTVOn : imageTVOff 
     } 
 
     componentDidUpdate(prevProps) {
-        if(prevProps.state !== this.props.state) {
+        if (prevProps.state !== this.props.state) {
             this.setState({state: this.props.state});
         }
     }
