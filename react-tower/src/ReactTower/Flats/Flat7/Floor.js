@@ -1,6 +1,10 @@
+import { AntenaContext } from "../../Antena";
+
 function Floor() {
   return (
-    <div />
+    <AntenaContext.Consumer>
+      {text => <p>{text}</p>}
+    </AntenaContext.Consumer>
    );
 }
 

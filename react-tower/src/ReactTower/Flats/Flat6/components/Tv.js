@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import Remote from "./Remote";
+import { AntenaContext } from '../../../Antena';
 
 class Tv extends React.Component {
 
@@ -31,19 +32,27 @@ class Tv extends React.Component {
         return (
             <Fragment>
                 <Remote callback={this.switchChannel}/>
-
-                <div style={{
-                    width: "80px",
-                    height: "80px",
-                    backgroundColor: this.state.color,
-                    border: "2px solid white",
-                    margin: "10px auto",
-                    color: "white",
-                    fontSize: "1.6em",
-                    fontWeight: "bold",
-                    textAlign: "right",
-                    padding: "10px"
-                }}>{displayChannel}</div>
+                
+                <AntenaContext.Consumer>
+                {signal =>
+                    <div style={{
+                        width: "80px",
+                        height: "80px",
+                        backgroundColor: this.state.color,
+                        border: "2px solid white",
+                        margin: "10px auto",
+                        color: "white",
+                        fontSize: "1.6em",
+                        fontWeight: "bold",
+                        textAlign: "right",
+                        padding: "10px"
+                    }}>
+                    <span style={{float: "right"}}>{displayChannel}</span>
+                    <img src={signal} style={{maxWidth: "100%", maxHeight: "100%"}} />
+                    
+                </div>
+                }
+                </AntenaContext.Consumer>
             </Fragment>
         )
     }

@@ -1,4 +1,5 @@
 import React from "react";
+import { AntenaContext } from "../../../Antena";
 
 class Window extends React.Component {
    
@@ -15,24 +16,29 @@ class Window extends React.Component {
     render() { 
             
         return (
-            <div style={{ 
-                width: "80%",
-                backgroundColor: this.state.night == 1 ? 'blueviolet' : 'lightblue', 
-                border: "2px solid white",
-                marginTop: "20%", 
-                marginLeft: "10%"
-            }}>
-                  
+            <AntenaContext.Consumer>
+
+            { sygnal => (
                 <div style={{ 
-                     border: "2px solid white",
-                     height: "60px"
-                }}></div>
+                    width: "80%",
+                    background: this.state.night == 1 ? `url(${sygnal}) center/cover` : 'lightblue', 
+                    border: "2px solid white",
+                    marginTop: "20%", 
+                    marginLeft: "10%"
+                }}>
+                  
+                    <div style={{ 
+                         border: "2px solid white",
+                        height: "60px"
+                    }}></div>
 
                 <div style={{ 
                     border: "2px solid white",
                     height: "60px"
                 }}></div>
             </div>
+            )}
+            </AntenaContext.Consumer>
         )
     }
 }
