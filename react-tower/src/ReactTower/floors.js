@@ -115,7 +115,7 @@ const floors = [
 		}
 	},
 	{
-		owner: '',
+		owner: 'Grzegorz Byrka',
 		level: 7,
 		leftWall: {
 			color: '#1D70B8'
