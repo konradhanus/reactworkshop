@@ -1,9 +1,9 @@
 
 import Remote from "./components/Remote";
 
-function Right() {
+function Right({toggleTVOnFourthFloor}) {
     return (
-     <div><Remote/></div>
+     <div><Remote onClick={toggleTVOnFourthFloor} /></div>
     );
   }
   

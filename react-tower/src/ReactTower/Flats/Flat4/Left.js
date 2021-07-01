@@ -1,8 +1,8 @@
 import TV from "./components/TV";
 
-function Left() {
+function Left({tvOnFourthFloorIsOn}) {
     return (
-     <div><TV /></div>
+     <div><TV isOn={tvOnFourthFloorIsOn} /></div>
     );
   }
   
