@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
 import SimpleButton from "./mainComponents/SimpleButton";
 import TV from "./mainComponents/Tv";
+
 import Meter from "./mainComponents/Meter";
 import { JElectricityMeterContext }  from "../../JElectricityMeter";
-
 
 
 function Left() {
 
   const [TVstate, toggleTV] = useState('off');
-
-  console.log(JElectricityMeterContext);
 
   return (
     <JElectricityMeterContext.Consumer>
