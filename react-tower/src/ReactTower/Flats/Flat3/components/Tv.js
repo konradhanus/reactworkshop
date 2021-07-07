@@ -1,18 +1,36 @@
-import React from "react";
+import React from 'react';
+import eventBus from './EventBus';
 
 class Tv extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { on: false };
+    state = { isOn: false };
+
+    componentDidMount() {
+        eventBus.on('switchTvState', (data) =>
+            this.setState({ isOn: data.isTvOn })
+        );
     }
 
     render() {
         return (
-            <span style={{ width: '70px', height: '50px' }}>
-                <span style={{ padding: '10px', width: '50px', height: '30px', backgroundColor: this.state.on ? 'white' : 'black'}}>Tv</span>
-            </span>
+            <div style={{
+                height: '84px',
+                width: '150px',
+                padding: '2px',
+                margin: '20px auto',
+                backgroundColor: 'black',
+            }}>
+                <div style={{ backgroundColor: 'black' }}>
+                    {this.state.isOn && <img
+                        alt='tv'
+                        src='https://media.tenor.com/images/eea1c4cadc9708ef91374cfac326e1e1/tenor.gif'
+                        style={{
+                            width: '100%',
+                        }}
+                    />}
+                </div>
+            </div>
         );
     }
-}  
- 
+}
+
 export default Tv;

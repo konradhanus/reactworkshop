@@ -1,6 +1,6 @@
 function Floor() {
   return (
-   <div>Tomek</div>
+    <div>T.</div>
   );
 }
 

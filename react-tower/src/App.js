@@ -1,12 +1,13 @@
-import logo from './logo.svg';
+import Antena from './ReactTower/Antena';
 import './App.css';
 import ReactTower from './ReactTower';
 
 function App() {
   return (
     <div className="App"> 
-      <img src={logo} className="App-logo" alt="logo" />
-      <ReactTower />
+      <Antena>
+        <ReactTower />
+      </Antena>
     </div>
   );
 }

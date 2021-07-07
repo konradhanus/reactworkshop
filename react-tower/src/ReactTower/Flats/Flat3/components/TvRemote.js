@@ -1,20 +1,32 @@
-import React from "react";
+import React from 'react';
+import eventBus from './EventBus';
 
 class TvRemote extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { on: false };
-    }
+    state = { isTvOn: false };
 
-    turnTvOnOrOff = function () {
-
+    turnTvOnOrOff() {
+        const nextIsTvOn = !this.state.isTvOn;
+        this.setState({ isTvOn: nextIsTvOn });
+        eventBus.dispatch('switchTvState', { isTvOn: nextIsTvOn });
     }
 
     render() {
+        const buttonColour = this.state.isTvOn ? 'green' : 'red';
         return (
-            <span style={{ width: '5px', height: '5px' }} onClick={this.turnTvOnOrOff}>Tv Remote</span>
+            <div style={{
+                height: '20px',
+                width: '20px',
+                padding: '5px',
+                margin: '4px 4px 0 auto',
+                backgroundColor: 'white',
+            }}>
+                <div
+                    onClick={this.turnTvOnOrOff.bind(this)}
+                    style={{ height: '20px', width: '20px', backgroundColor: buttonColour, borderRadius: '10px' }}
+                />
+            </div>
         );
     }
-}  
- 
+}
+
 export default TvRemote;

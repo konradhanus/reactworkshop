@@ -1,8 +1,10 @@
-import Remote from './components/Remote';
+import { AntenaContext } from "../../Antena";
 
 function Floor() {
   return (
-    <div><Remote /></div>
+    <AntenaContext.Consumer>
+      {text => <p>{text}</p>}
+    </AntenaContext.Consumer>
    );
 }
 
