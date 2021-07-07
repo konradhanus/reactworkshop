@@ -6,12 +6,12 @@ import ReactTower from './ReactTower';
 function App() {
   return (
     <div className="App"> 
-      <JElectricityMeter><Antena>
-        
-        <ReactTower />
-    </Antena>
-</JElectricityMeter>
-          </div>
+      <JElectricityMeter>
+        <Antena>
+           <ReactTower />
+        </Antena> 
+      </JElectricityMeter>
+    </div>
   );
 }
 
