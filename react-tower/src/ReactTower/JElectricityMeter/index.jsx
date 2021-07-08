@@ -6,9 +6,13 @@ class JElectricityMeter extends React.Component {
 
     state = {
         flats: {
-            1: { owner: '1', bill: 0 },
+            1: { owner: 'Viacheslav', bill: 0 },
             2: { owner: 'Julia', bill: 0 },
-            3: { owner: '3', bill: 0 }
+            3: { owner: 'Kuba', bill: 0 },
+            4: { owner: 'Maciej', bill: 0 },
+            5: { owner: 'Daniel', bill: 0 },
+            6: { owner: 'Tomek', bill: 0 },
+            7: { owner: 'Grzesiek', bill: 0 }
         },
         towerBill: 0
     };
