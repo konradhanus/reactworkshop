@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Window from "./mainComponents/Window";
 import SimpleButton from "./mainComponents/SimpleButton";
-
 import { JElectricityMeterContext }  from "../../JElectricityMeter";
 
 function Right() {

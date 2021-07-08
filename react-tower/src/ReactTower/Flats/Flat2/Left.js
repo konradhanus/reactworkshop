@@ -3,6 +3,7 @@ import SimpleButton from "./mainComponents/SimpleButton";
 import TV from "./mainComponents/Tv";
 import Meter from "./mainComponents/Meter";
 
+
 function Left() {
 
   const [TVstate, toggleTV] = useState('off');
