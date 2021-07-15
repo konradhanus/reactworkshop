@@ -54,6 +54,7 @@
   position: absolute;
   top: 986px;
   left: 27px;
+  transition: top 0.3s ease;
 }
 
 .left{
@@ -114,7 +115,7 @@
   transform: rotate(-30deg) skewX(-30deg) scaleY(0.864);
   position: relative;
   bottom: 50px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .counter-top{

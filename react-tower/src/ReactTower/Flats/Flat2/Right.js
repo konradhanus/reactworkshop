@@ -13,6 +13,7 @@ function Right() {
             checkNightState(prevNightState => prevNightState == 0 ? 1 : 0);
           }} 
           name = {nightState == 0 ? 'n' : 'd'}
+          buttonStatus = {nightState}
           styles = {{ 
             transform: "rotate(-90deg)",
             marginTop: "5px"

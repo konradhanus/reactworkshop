@@ -13,7 +13,7 @@ function Level({ floor }) {
 	return (
 		<div className="Level" style={{ zIndex: floor.level }}>
 			<WallLeft color={floor.leftWall.color}>{() => <Left tvOnFourthFloorIsOn={tvOnFourthFloorIsOn} />}</WallLeft>
-			<WallRight color={floor.rightWall.color}>{() => <Right toggleTVOnFourthFloor={toggleTVOnFourthFloor} />}</WallRight>
+			<WallRight color={floor.rightWall.color}>{() => <Right tvOnFourthFloorIsOn={tvOnFourthFloorIsOn} toggleTVOnFourthFloor={toggleTVOnFourthFloor} />}</WallRight>
 			<Floor color={floor.floor.color}>{floor.components.Floor}</Floor>
 		</div>
 	);

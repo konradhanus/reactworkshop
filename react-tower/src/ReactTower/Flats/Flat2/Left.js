@@ -12,6 +12,7 @@ function Left() {
       <SimpleButton 
       handleClickFunction = {() => { toggleTV(PrevTVstate => PrevTVstate === 'off' ? 'on' : 'off') }} 
       name = {TVstate === 'on' ? 'off' : 'on'}
+      buttonStatus = {TVstate}
       styles = {{marginTop: '100px'}}
     />
       <TV state={TVstate} />

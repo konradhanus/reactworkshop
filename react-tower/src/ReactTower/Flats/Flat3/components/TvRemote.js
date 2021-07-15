@@ -1,13 +1,25 @@
 import React from 'react';
 import eventBus from './EventBus';
+import { connect } from "react-redux";
+import {actionCreator} from './../../../Counter/action';
 
 class TvRemote extends React.Component {
     state = { isTvOn: false };
+    eatEnergy;
 
     turnTvOnOrOff() {
         const nextIsTvOn = !this.state.isTvOn;
         this.setState({ isTvOn: nextIsTvOn });
         eventBus.dispatch('switchTvState', { isTvOn: nextIsTvOn });
+
+        if (nextIsTvOn) {
+            this.eatEnergy = setInterval(
+                () => this.props.addFloor3(),
+                1000
+            );
+        } else {
+            clearTimeout(this.eatEnergy);
+        }
     }
 
     render() {
@@ -29,4 +41,4 @@ class TvRemote extends React.Component {
     }
 }
 
-export default TvRemote;
+export default connect(null, actionCreator)(TvRemote);

@@ -1,11 +1,28 @@
 
+import { useState } from "react";
+import {actionCreator} from '../../Counter/action';
+import { connect } from "react-redux";
 import Remote from "./components/Remote";
 
-function Right({toggleTVOnFourthFloor}) {
+function Right({addFloor4, tvOnFourthFloorIsOn, toggleTVOnFourthFloor}) {
+    const [intervalId, setIntervalId] = useState(null);
+
+    const toggleTV = () => {
+      toggleTVOnFourthFloor();
+
+      if (!tvOnFourthFloorIsOn && !intervalId) {
+        setIntervalId(setInterval(() => addFloor4(0.5), 1000));
+      } else if (tvOnFourthFloorIsOn) {
+        clearInterval(intervalId)
+        setIntervalId(null);
+      }
+    }
+
     return (
-     <div><Remote onClick={toggleTVOnFourthFloor} /></div>
+      <div><Remote onClick={toggleTV} /></div>
     );
   }
-  
-  export default Right;
-  
+
+const myConnect = connect(null, actionCreator);
+
+export default myConnect(Right);
