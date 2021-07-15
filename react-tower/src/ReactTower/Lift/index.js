@@ -4,7 +4,7 @@ import Lift from './Lift';
 
 const mapStateToProps = (state) => {
     return ({
-        counter: state.counter
+        lift: state.lift
     })
 }
 

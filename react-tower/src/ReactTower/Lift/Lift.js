@@ -1,6 +1,6 @@
-function Lift({counter}) {
+function Lift({lift}) {
     return (
-      <div class="container">
+      <div class="container" style={{top: lift}}>
         <div class="left" />
         <div class="right" />
         <div class="top" />

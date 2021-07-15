@@ -1,6 +1,6 @@
 import { ADD } from './action';
 
-const initialState = 0;
+const initialState = 986;
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {

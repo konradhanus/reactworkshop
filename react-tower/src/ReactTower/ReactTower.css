@@ -52,7 +52,7 @@
 .container{
   z-index: 99;
   position: absolute;
-  top: 854px;
+  top: 986px;
   left: 27px;
 }
 
@@ -93,7 +93,7 @@
 .counter-container{
   z-index: 99;
   position: absolute;
-  top: 914px;
+  top: 1000px;
   left: 450px;
 }
 
