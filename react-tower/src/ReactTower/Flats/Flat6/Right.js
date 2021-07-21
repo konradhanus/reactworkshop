@@ -1,6 +1,8 @@
+import Floor6LiftButton from "./components/Floor6LiftButton";
+
 function Right() {
   return (
-    <div></div>
+    <div><Floor6LiftButton text={ "LIFT" } /></div>
   );
 }
 
