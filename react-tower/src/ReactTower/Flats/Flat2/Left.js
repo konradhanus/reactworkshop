@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SimpleButton from "./mainComponents/SimpleButton";
+import Flat2LiftButton from "./mainComponents/Flat2LiftButton";
 import TV from "./mainComponents/Tv";
 
 
@@ -9,6 +10,7 @@ function Left() {
 
   return (
     <div style={{display: 'inline-flex'}}>
+      <Flat2LiftButton  styles = {{marginTop: '100px'}} />
       <SimpleButton 
       handleClickFunction = {() => { toggleTV(PrevTVstate => PrevTVstate === 'off' ? 'on' : 'off') }} 
       name = {TVstate === 'on' ? 'off' : 'on'}
