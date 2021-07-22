@@ -1,6 +1,8 @@
 import React, {Fragment} from 'react';
 import Remote from "./Remote";
 import { AntenaContext } from '../../../Antena';
+import { actionCreator } from './../../../Counter/action';
+import { connect } from "react-redux";
 
 class Tv extends React.Component {
 
@@ -8,21 +10,28 @@ class Tv extends React.Component {
 
     constructor(props) {
         super(props);
-        this.state = {channel: 0, color: "black"};
+        this.state = {isOn: false, channel: 0, color: "black"};
+        setInterval(this.counter, 1000);
     }
 
-    random_rgba = () => {
+    randomRgba = () => {
         return 'rgba(' + Math.round(Math.random() * 255) + ',' + Math.round(Math.random() * 255) + ','
             + Math.round(Math.random() * 255) + ',' + Math.random().toFixed(1) + ')';
+    }
+
+    counter = () => {
+        if(this.state.isOn) {
+            this.props.addFloor6();
+        }
     }
 
     switchChannel = () => {
         const channel = (this.state.channel + 1) % this.channelCount;
 
         if(0 === channel) {
-            this.setState({channel: 0, color: "black"})
+            this.setState({isOn: false, channel: 0, color: "black"})
         } else {
-            this.setState({channel: channel, color: this.random_rgba()})
+            this.setState({isOn: true, channel: channel, color: this.randomRgba()})
         }
     }
 
@@ -58,4 +67,4 @@ class Tv extends React.Component {
     }
 }
 
-export default Tv;
+export default connect(null, actionCreator)(Tv);

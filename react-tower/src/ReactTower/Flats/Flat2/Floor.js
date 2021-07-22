@@ -1,7 +1,5 @@
-
 import Sofa from "./mainComponents/Sofa";
 import Table from "./mainComponents/Table";
-
 
 function Floor() {
   
