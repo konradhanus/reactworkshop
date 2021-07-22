@@ -1,12 +1,7 @@
 
-import { ADD, MOVE_TO_FLOOR_6, MOVE_TO_FLOOR_2 } from './action';
-
-const initialState = 1000;
-
-import { MOVE_TO_FLOOR_4, MOVE_TO_FLOOR_6 } from "./action";
+import { ADD, MOVE_TO_FLOOR_6, MOVE_TO_FLOOR_2, MOVE_TO_FLOOR_4 } from './action';
 
 const initialState = 988;
-
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {

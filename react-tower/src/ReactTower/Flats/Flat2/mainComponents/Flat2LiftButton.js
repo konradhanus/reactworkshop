@@ -4,17 +4,10 @@ import { connect } from "react-redux";
 
 function Flat2LiftButton(props) {
 
-    const moveLift = () => {
-        props.moveToFloor2();
-    }
-
     return (
         <button 
             style = {props.styles} 
-            onClick = {() => {
-                props.moveToFloor2();
-            }}>
-                2
+            onClick = {props.moveToFloor2}>
             </button>
     )
 }
