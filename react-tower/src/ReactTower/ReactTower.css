@@ -57,6 +57,8 @@
   transition: top 0.3s ease;
 }
 
+
+
 .left{
   height: 96px;
   width: 96px;
@@ -90,6 +92,121 @@
   position: relative;
   bottom: 200px;
 }
+
+.road{
+  z-index: 9;
+  position: absolute;
+  top: 805px;
+  left: 1000px;
+  width: 500px;
+  height: 160px;
+  transition: top 0.3s ease;
+  background-color: #292828;
+  transform: rotate(210deg) skewX(-30deg) scaleY(10.964);
+  background-size: 1000px 100px;
+  border: 10px solid white;
+}
+
+.road2{
+  z-index: 9;
+  position: absolute;
+  top: 1500px;
+  width: 500px;
+  height: 300px;
+  transition: top 0.3s ease;
+  transform: rotate(90deg) skewX(-30deg) scaleY(10.964);
+  background-color: #292828;
+  background-size: 1000px 100px;
+  border: 10px solid white;
+}
+
+.line{
+  width: 0px;
+  height: 140px;
+  margin-left: 250px;
+  border: 10px dashed white;
+}
+
+.line2{
+  width: 0px;
+  height: 1000px;
+  margin-left: 250px;
+  border: 10px dashed white;
+  transform: rotate(4deg)
+}
+
+.parking{
+  z-index: 9;
+  position: relative;
+  width: 500px;
+  top: 100px;
+  left: -400px;
+  transform: rotate(210deg) skewX(-30deg) scaleY(0.864);
+}
+
+
+.parkingPlace1{
+  height: 250px;
+  width: 150px;
+  top: 0px;
+  background: yellow;
+  border: 2px solid black;
+  transform-origin: 0 0;
+  position: absolute;
+  bottom: 0px;
+  border: 5px solid white;
+  color: white;
+  font-size: 200px;
+}
+
+
+.parkingPlace2{
+  height: 250px;
+  width: 150px;
+  top: 0;
+  left: 160px;
+  background: green;
+  border: 2px solid black;
+  transform-origin: 0 0;
+  position: absolute;
+  bottom: -200px;
+  border: 5px solid white;
+  color: white;
+  font-size: 200px;
+}
+
+
+.parkingPlace3{
+  height: 250px;
+  width: 150px;
+  top: 0;
+  left: 320px;
+  background: #777777;
+  border: 2px solid black;
+  transform-origin: 0 0;
+  position: absolute;
+  bottom: -200px;
+  border: 5px solid white;
+  color: white;
+  font-size: 200px;
+}
+
+
+.parkingPlace4{
+  height: 250px;
+  width: 150px;
+  top: 0;
+  left: 480px;
+  background: red;
+  border: 2px solid black;
+  transform-origin: 0 0;
+  position: absolute;
+  bottom: -200px;
+  border: 5px solid white;
+  color: white;
+  font-size: 200px;
+}
+
 
 .counter-container{
   z-index: 99;

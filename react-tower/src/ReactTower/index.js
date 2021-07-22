@@ -5,6 +5,8 @@ import { ErrorBoundary } from 'react-error-boundary';
 import ErrorFallback from './Level/ErrorFallback';
 import Counter from './Counter';
 import Lift from './Lift';
+import Parking from './Parking/Parking';
+
 function ReactTower() {
 	return (
 		<div className="ReactTower">
@@ -18,6 +20,9 @@ function ReactTower() {
 			))}
 			<Lift/>
 			<Counter/>
+			<Parking>
+				{/* <Car /> */}
+			</Parking>
 		</div>
 	);
 }
