@@ -4,9 +4,11 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import configureStore from './store';
+import configureStore, { sagaMiddleware } from './store';
+import initSagas from './initSagas';
 
 const store = configureStore();
+initSagas(sagaMiddleware);
 
 ReactDOM.render(
   <React.StrictMode>

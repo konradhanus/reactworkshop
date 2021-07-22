@@ -1,11 +1,11 @@
-import Remote from './components/Remote';
+import CarButton from './components/CarButton';
 
 
 function Right() {
     return (
 
-        // <Remote />
-        <div/>
+         <CarButton />
+
     );
   }
   
