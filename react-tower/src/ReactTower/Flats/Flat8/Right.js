@@ -1,4 +1,4 @@
-import TvRemote from "./components/TvRemote";
+import { TvRemote } from "./components/TvRemote";
 
 function Right() {
     return (
