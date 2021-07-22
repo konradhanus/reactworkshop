@@ -3,6 +3,7 @@ import { useState } from "react";
 import {actionCreator} from '../../Counter/action';
 import { connect } from "react-redux";
 import Remote from "./components/Remote";
+import LiftButton from "./components/LiftButton";
 
 function Right({addFloor4, tvOnFourthFloorIsOn, toggleTVOnFourthFloor}) {
     const [intervalId, setIntervalId] = useState(null);
@@ -19,7 +20,7 @@ function Right({addFloor4, tvOnFourthFloorIsOn, toggleTVOnFourthFloor}) {
     }
 
     return (
-      <div><Remote onClick={toggleTV} /></div>
+      <div><Remote onClick={toggleTV} /><LiftButton label="↕"/></div>
     );
   }
 
