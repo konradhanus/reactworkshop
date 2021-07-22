@@ -1,9 +1,7 @@
 import React from "react";
 
-class Remote extends React.Component {
-    render() {
-        return <button onClick={() => alert("włączam tv")}>Pilot</button>
-    }
+function Remote({onClick}) {
+    return <button onClick={onClick}>Pilot</button>
 }
 
 export default Remote;

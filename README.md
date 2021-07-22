@@ -1,5 +1,6 @@
-Jak uruchomić?
+## Jak uruchomić?
 
-yarn install
-yarn start
+`yarn install`
+
+`yarn start`
 

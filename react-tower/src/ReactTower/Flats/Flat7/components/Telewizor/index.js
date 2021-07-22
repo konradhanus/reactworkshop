@@ -1,11 +1,16 @@
-import React from 'react';
+import Telewizor from './Telewizor';
+import { AntenaContext } from "../../../../Antena";
 
-class Telewizor extends React.Component {
-    render() {
-        return (
-            <div style={{width:'100px', height:'40px', backgroundColor:'black'}}>Telewizor</div>
-        )
-    }
+import React from "react";
+
+function TelewizorConsumer (props) {
+    return (
+        <AntenaContext.Consumer>
+            {signal =>
+               <Telewizor {...props} signal={signal}/>
+            }
+        </AntenaContext.Consumer>
+    );
 }
 
-export default Telewizor;
+export default TelewizorConsumer;

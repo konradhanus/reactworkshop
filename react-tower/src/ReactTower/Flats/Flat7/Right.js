@@ -1,7 +1,11 @@
+import Remote from './components/Remote';
+
 
 function Right() {
     return (
-     <div>lorem ipsum</div>
+
+        // <Remote />
+        <div/>
     );
   }
   

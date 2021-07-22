@@ -1,9 +1,20 @@
 import React from "react";
+import { AntenaContext } from "../../../Antena";
 
-class TV extends React.Component {
-    render() {
-        return <div style={{ backgroundColor: "black", border: "2px solid silver", width: "100px", height: "75px"}}></div>
-    }
+function TV ({isOn}) {
+    return (
+        <AntenaContext.Consumer>{signal =>
+            <div
+                style={{
+                    background: isOn ? `url(${signal}) center/cover` : "black",
+                    border: "2px solid silver",
+                    width: "120px",
+                    height: "75px",
+                    margin: "10px auto"
+                }}
+            />
+        }</AntenaContext.Consumer>
+    );
 }
 
 export default TV;

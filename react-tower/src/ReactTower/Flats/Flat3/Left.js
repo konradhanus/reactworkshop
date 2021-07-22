@@ -1,10 +1,9 @@
-import Tv from './components/Tv.js';
+import Tv from './components/Tv';
 
 function Left() {
     return (
-     <div><Tv></Tv></div>
+        <div><Tv /></div>
     );
-  }
-  
-  export default Left;
-  
+}
+
+export default Left;

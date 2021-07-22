@@ -5,6 +5,7 @@ import Flat4 from './Flats/Flat4';
 import Flat5 from './Flats/Flat5';
 import Flat6 from './Flats/Flat6';
 import Flat7 from './Flats/Flat7';
+import Flat8 from './Flats/Flat8';
 
 const floors = [
 	{
@@ -115,7 +116,7 @@ const floors = [
 		}
 	},
 	{
-		owner: '',
+		owner: 'Grzegorz Byrka',
 		level: 7,
 		leftWall: {
 			color: '#1D70B8'
@@ -130,6 +131,24 @@ const floors = [
 			Left: Flat7.Left,
 			Right: Flat7.Right,
 			Floor: Flat7.Floor,
+		}
+	},
+	{
+		owner: 'Remigiusz Kolanko',
+		level: 8,
+		leftWall: {
+			color: '#a46e81'
+		},
+		rightWall: {
+			color: '#7a5c95'
+		},
+		floor: {
+			color: '#cd816d'
+		},
+		components: {
+			Left: Flat8.Left,
+			Right: Flat8.Right,
+			Floor: Flat8.Floor,
 		}
 	}
 ];
