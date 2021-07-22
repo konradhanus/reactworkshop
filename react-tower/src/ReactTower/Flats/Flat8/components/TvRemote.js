@@ -17,9 +17,8 @@ export const TvRemote = () => {
         () => dispatch(actionCreator.addFloor8()),
         1000
       );
-    } else {
-      clearInterval(powerInterval);
     }
+    return () => clearInterval(powerInterval);
   }, [tvOn])
 
   return (
