@@ -19,7 +19,6 @@ function sleep(ms) {
           callback(null, true);
         } else {
           callback("Zapomnij");
-          log("Nie autoryzowana próba wejścia IP: "+ myIpAddress.toString());
         }
       }
     }
@@ -30,25 +29,25 @@ function sleep(ms) {
 app.get('/getCar/:id',cors(corsOptionsDelegate), function(req, res) {
     res.header('Content-Type', 'application/json');
     const sleepTime = Math.floor(Math.random() * 9) + 1;
-    //sleep(sleepTime*1000).then(()=>{
+    sleep(sleepTime*1000).then(()=>{
         res.json({
             car: req.params.id,
             time: sleepTime*1000,
             counter: counter++,
         });
-    //});
+    });
 });
 
 app.get('/farawayCar/:id',cors(corsOptionsDelegate), function(req, res) {
     res.header('Content-Type', 'application/json');
     const sleepTime = Math.floor(Math.random() * 9) + 1;
-    //sleep(sleepTime*1000).then(()=>{
+    sleep(sleepTime*1000).then(()=>{
         res.json({
             car: req.params.id,
             time: sleepTime,
             counter: counter++,
         });
-    //});
+    });
 });
 
 app.listen(8080, function() {
