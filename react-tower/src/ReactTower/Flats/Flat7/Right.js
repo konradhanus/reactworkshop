@@ -1,11 +1,8 @@
 import CarButton from './components/CarButton';
 
-
 function Right() {
     return (
-
          <CarButton />
-
     );
   }
   
