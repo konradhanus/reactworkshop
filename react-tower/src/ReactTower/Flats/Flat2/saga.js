@@ -1,18 +1,16 @@
 import { takeEvery, fork, all, delay } from 'redux-saga/effects';
-import { GET_CAR_TO_FLOOR_2 } from './action';
+import { GET_CAR_TO_FLOOR_2 } from '../../Car/action';
 
-function* onShowAlert(action){
-    
-    yield alert('2');
+function* onParkAction() {
+    yield console.log('Park Me action');
     //http://www.randomnumberapi.com/api/v1.0/random
 }
 
-
-function* getCar(){
-    yield takeEvery(GET_CAR_TO_FLOOR_2, onShowAlert)
+function* onParkMe(){
+    yield takeEvery(GET_CAR_TO_FLOOR_2, onParkAction)
 }
 
-export function* flat2Saga()
+export function* floor2CarSaga()
 {
-    yield all([fork(getCar)])
+    yield all([fork(onParkMe)])
 }

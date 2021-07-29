@@ -8,7 +8,8 @@ function Flat2LiftButton(props) {
         <button 
             style = {props.styles} 
             onClick = {props.moveToFloor2}>
-            </button>
+                {props.name}
+        </button>
     )
 }
 
