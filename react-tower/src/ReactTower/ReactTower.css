@@ -149,14 +149,14 @@
   height: 250px;
   width: 150px;
   top: 0px;
-  background: yellow;
+  background: #b3cde0;
   border: 2px solid black;
   transform-origin: 0 0;
   position: absolute;
   bottom: 0px;
   border: 5px solid white;
   color: white;
-  font-size: 200px;
+  font-size: 100px;
 }
 
 
@@ -165,14 +165,14 @@
   width: 150px;
   top: 0;
   left: 160px;
-  background: green;
+  background: 	#6497b1;
   border: 2px solid black;
   transform-origin: 0 0;
   position: absolute;
   bottom: -200px;
   border: 5px solid white;
   color: white;
-  font-size: 200px;
+  font-size: 100px;
 }
 
 
@@ -181,14 +181,14 @@
   width: 150px;
   top: 0;
   left: 320px;
-  background: #777777;
+  background: #005b96;
   border: 2px solid black;
   transform-origin: 0 0;
   position: absolute;
   bottom: -200px;
   border: 5px solid white;
   color: white;
-  font-size: 200px;
+  font-size: 100px;
 }
 
 
@@ -197,16 +197,77 @@
   width: 150px;
   top: 0;
   left: 480px;
-  background: red;
+  background: 	#03396c;
   border: 2px solid black;
   transform-origin: 0 0;
   position: absolute;
   bottom: -200px;
   border: 5px solid white;
   color: white;
-  font-size: 200px;
+  font-size: 100px;
 }
 
+.parkingPlace5{
+  height: 250px;
+  width: 150px;
+  top: 0;
+  left: 640px;
+  background: #011f4b;
+  border: 2px solid black;
+  transform-origin: 0 0;
+  position: absolute;
+  bottom: -200px;
+  border: 5px solid white;
+  color: white;
+  font-size: 100px;
+}
+
+
+
+.parkingPlace6{
+  height: 250px;
+  width: 150px;
+  top: 0;
+  left: 800px;
+  background: #1a355d;
+  border: 2px solid black;
+  transform-origin: 0 0;
+  position: absolute;
+  bottom: -200px;
+  border: 5px solid white;
+  color: white;
+  font-size: 100px;
+}
+
+.parkingPlace7{
+  height: 250px;
+  width: 150px;
+  top: 0;
+  left: 960px;
+  background: #334b6e;
+  border: 2px solid black;
+  transform-origin: 0 0;
+  position: absolute;
+  bottom: -200px;
+  border: 5px solid white;
+  color: white;
+  font-size: 100px;
+}
+
+.parkingPlace8{
+  height: 250px;
+  width: 150px;
+  top: 0;
+  left: 1120px;
+  background: #667893;
+  border: 2px solid black;
+  transform-origin: 0 0;
+  position: absolute;
+  bottom: -200px;
+  border: 5px solid white;
+  color: white;
+  font-size: 100px;
+}
 
 .counter-container{
   z-index: 99;

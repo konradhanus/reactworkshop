@@ -21,7 +21,6 @@ function ReactTower() {
 			<Lift/>
 			<Counter/>
 			<Parking>
-				{/* <Car /> */}
 			</Parking>
 		</div>
 	);
