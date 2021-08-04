@@ -98,7 +98,7 @@ const floors = [
 		}
 	},
 	{
-		owner: '',
+		owner: 'Tomek Zielonka',
 		level: 6,
 		leftWall: {
 			color: '#4FA640'
