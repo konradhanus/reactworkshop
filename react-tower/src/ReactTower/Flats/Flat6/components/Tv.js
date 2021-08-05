@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import Remote from "./Remote";
 import { AntenaContext } from '../../../Antena';
-import { actionCreator } from './../../../Counter/action';
+import { actionCreator } from '../../../Counter/action';
 import { connect } from "react-redux";
 
 class Tv extends React.Component {

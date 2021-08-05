@@ -1,16 +1,15 @@
-import { takeEvery, fork, all, delay } from 'redux-saga/effects';
+import { take, actionChannel, call } from 'redux-saga/effects';
 import {GET_CAR_TO_FLOOR_6} from '../../Car/action';
-
-function* onShowAlert() {
-    yield alert('6!');
-    //http://www.randomnumberapi.com/api/v1.0/random
-}
-
-function* onGetCar(){
-    yield takeEvery(GET_CAR_TO_FLOOR_6, onShowAlert)
-}
+import React from "react";
 
 export function* floor6CarSaga()
 {
-    yield all([fork(onGetCar)])
+    const onGetCarChannel = yield actionChannel(GET_CAR_TO_FLOOR_6);
+
+    while(true) {
+        yield take(onGetCarChannel);
+        const response = yield call(fetch, "http://localhost:8080/getCar/6");
+        const car = yield response.json();
+        console.log(car.car);
+    }
 }
