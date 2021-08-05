@@ -8,7 +8,7 @@ function Lift({lift}) {
       <div class="container" style={{top: lift}}>
         <div class="left">
             <div style={{display: "inline-flex"}}>
-              <Flat2LiftButton styles = {{transform: "rotate(270deg)"}} />
+              <Flat2LiftButton styles = {{transform: "rotate(270deg)"}} name={'2'}/>
               <Floor6LiftButton text={ "6" } />
               <Floor4LiftButton />
             </div>
