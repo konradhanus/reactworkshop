@@ -6,7 +6,7 @@ import Flat5 from './Flats/Flat5';
 import Flat6 from './Flats/Flat6';
 import Flat7 from './Flats/Flat7';
 import Flat8 from './Flats/Flat8';
-
+import Flat9 from './Flats/Flat9';
 const floors = [
 	{
 		owner: '',
@@ -149,6 +149,24 @@ const floors = [
 			Left: Flat8.Left,
 			Right: Flat8.Right,
 			Floor: Flat8.Floor,
+		}
+	},
+	{
+		owner: 'Konad Hanus',
+		level: 9,
+		leftWall: {
+			color: 'black'
+		},
+		rightWall: {
+			color: 'black'
+		},
+		floor: {
+			color: 'black'
+		},
+		components: {
+			Left: Flat9.Left,
+			Right: Flat9.Right,
+			Floor: Flat9.Floor,
 		}
 	}
 ];

@@ -1,5 +1,5 @@
 const callRandAPI = async () => {
-    const response = await fetch("http://www.randomnumberapi.com/api/v1.0/random",);
+    const response = await fetch("http://localhost:8080/getCar/1");
     return await response.json();
 }
 
