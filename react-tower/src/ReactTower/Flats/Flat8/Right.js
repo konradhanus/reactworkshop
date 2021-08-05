@@ -1,8 +1,12 @@
-import TvRemote from "./components/TvRemote";
+import { TvRemote } from "./components/TvRemote";
+import { CarButton } from "./components/CarButton";
 
 function Right() {
     return (
-     <div><TvRemote /></div>
+     <div>
+       <CarButton />
+       <TvRemote />
+      </div>
     );
   }
   
