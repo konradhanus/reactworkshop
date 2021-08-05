@@ -6,15 +6,6 @@ import auto5 from './CarStable/modre_auto_red.png';
 import auto6 from './CarStable/modre_auto_turquoise.png';
 import auto7 from './CarStable/modre_auto_violet.png';
 import auto8 from './CarStable/modre_auto_yellow.png';
-import {connect} from "react-redux";
-import {actionCreator} from "./action";
-
-const mapStateToProps = (state) => {
-    return ({
-        isVisible: state.isVisible
-    })
-}
-const myConnect = connect(mapStateToProps, actionCreator);
 
 function Car(props) {
 
@@ -42,8 +33,8 @@ function Car(props) {
     }
 
     return (
-      props.isVisible && <div style={{width: 100, height: 200, margin: 20}}><img src={getCar(props.id)} width="100" height="200"></img></div>
+      props.isVisible && <div style={{width: 100, height: 200, margin: 20}}><img src={getCar(props.id)} width="100" height="200"></img></div> 
     );
   }
 
-export default myConnect(Car);
+export default Car;

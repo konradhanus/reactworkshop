@@ -1,0 +1,2 @@
+Uruchamiamy program Wchodzimy do zak³adki "ustawienia programu"W ip dreama wpisujemy nasze ip relooka i wciskamy "save configuration Otwieramy liste kana³ów przycisk "³aduj"iwysy³amy 
+listedo tunera przycisk "transfer danych"Pojawi siê nowe okienko naciskamy "zapisz" i cekamy na komunikat o poprawnym zapisie I ogl¹damy swoj¹ liste w tunku

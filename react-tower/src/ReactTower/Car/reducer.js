@@ -1,19 +1,56 @@
-import {GET_CAR_TO_FLOOR_6, FARAWAY_CAR_FROM_FLOOR_6} from "./action";
+import {GET_CAR_TO_FLOOR_6, FARAWAY_CAR_FROM_FLOOR_6, SHOW_CAR} from "./action";
 
-const initialVisibility = true;
+const initialVisibility = [{
+    id: 1, 
+    showCar: false
+},
+{
+    id: 2, 
+    showCar: false
+},
+{
+    id: 3, 
+    showCar: false
+},
+{
+    id: 4, 
+    showCar: false
+},
+{
+    id: 5, 
+    showCar: false
+},
+{
+    id: 6, 
+    showCar: false
+},
+{
+    id: 7, 
+    showCar: false
+},
+{
+    id: 8, 
+    showCar: false
+},
+{
+    id: 9, 
+    showCar: false
+}];
 
-const reducer = (isVisible = initialVisibility, action) => {
+const reducer = (state = initialVisibility, action) => {
     switch (action.type) {
-        case GET_CAR_TO_FLOOR_6:
-            return true;
-            break;
+    
+        case SHOW_CAR:
+            const car = state[action.payload];
+            car.showCar = true;
 
-        case FARAWAY_CAR_FROM_FLOOR_6:
-            return false;
-            break;
+            const newState = [...state];
+            newState[action.payload] = car;
+
+            return newState;
 
         default: {
-            return isVisible;
+            return state;
         }
     }
 };

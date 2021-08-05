@@ -50,7 +50,55 @@ app.get('/farawayCar/:id',cors(corsOptionsDelegate), function(req, res) {
     });
 });
 
-app.listen(8080, function() {
+
+app.post('/testCreate/:userId', function(req, res){
+  res.header('Content-Type', 'application/json');
+  res.json({
+      testId: 'TEST_ID'
+  })
+})
+
+
+app.post('/test/:testId', function(req, res){
+  res.header('Content-Type', 'application/json');
+  res.json({
+      timeStart:'12-12-2021 10:52:53',
+      timeStop: '12-12-2021 10:52:53',
+      questionNumber: 1,
+      answer: 70,
+  })
+})
+
+app.get('/test/:userId/:testId', function(req, res){
+  res.header('Content-Type', 'application/json');
+  res.json({
+      testId:'12-12-2021 10:52:53',
+      answers: [{
+        timeStart:'12-12-2021 10:52:53',
+        timeStop: '12-12-2021 10:52:53',
+        questionNumber: 1,
+        answer: 70,
+      }],
+  })
+})
+
+app.get('/testResult/:testId/', function(req, res){
+  res.header('Content-Type', 'application/json');
+  res.json({
+      result: {
+        red: 33,
+        green: 33,
+        blue: 34,
+        yellow: 33
+      }
+  })
+})
+
+app.post('/user/:UUID/:identifier', function(req, res){
+  res.header('Content-Type', 'application/json');
+})
+
+app.listen(8081, function() {
     
 });
    
